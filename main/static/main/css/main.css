@@ -1,0 +1,828 @@
+html {
+    height:100%;
+}
+body {
+     background-image: url('https://i.pinimg.com/originals/23/e4/f2/23e4f20152454469b78db66337d3dd56.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+    }
+/*DESKTOP Version*/
+
+
+/*DESKTOP MENU*/
+@media screen and (min-width: 700px){
+    #burger{
+        display: none;
+        }
+
+    aside {
+        float: left;
+        background: #FFC8FD;
+        width: 250px;
+        padding: 0.1%;
+        height: 100vh;
+        color: #696969;
+        border-right: 5px solid rgba(150, 151, 247, 0.5);
+        position: fixed;
+        display: inline;
+        z-index: 10;
+    }
+    .nav-links{
+        margin-top: 120px;
+        margin-bottom: 1rem;
+    }
+
+    /*list*/
+    ul #list{
+        list-style: none;
+        margin: 10 px;
+        font-family: 'Indie Flower', cursive;
+        font-size: 32px;
+        color: #696969;
+
+    }
+    .sidenav {
+        display:block;
+        margin-left: -15px;
+        width: 100%;
+        float:left;
+    }
+
+    aside ul li,aside ul a{
+        color:#696969;
+        display: block;
+        margin-top: 80px;
+        transition: transform .6s ease;
+        font-family: 'Indie Flower', cursive;
+        font-size: 35px;
+        padding-left: 1px;
+    }
+    aside ul li:hover,aside ul a:hover{
+        color:#FF00FF;
+        text-decoration: none;
+        transform: scale(1.05);
+    }
+
+}
+/*DESKTOP MAIN*/
+@media screen and (min-width: 700px){
+      main .features {
+      float:left;
+      color: #696969;
+      margin-top: 15px;
+      text-align: center;
+      width: calc(100% - 275px);
+      margin-left: 275px;
+      margin-right: 5px;
+      position: relative;
+      height: 100vh;
+    }
+
+    main .features h1 {font-size: 85px;font-family: 'Indie Flower', cursive;}
+    main .features p {max-width: 100%; margin: 1px auto,font-family: 'Indie Flower',font-size: 50px;}
+
+    main .features h2 {
+        float: left;
+        color: #696969;
+        margin-top: 100px;
+        text-align: left;
+        margin-left: 50px;
+        margin-right: 5px;
+        font-size: 20px;
+        height: calc(100% - 100px);
+        width: calc(100% - 1000px);
+
+    }
+    main .index_features {
+      float:left;
+      color: #696969;
+      margin-top: 15px;
+      text-align: center;
+      width: calc(100% - 275px);
+      margin-left: 275px;
+      margin-right: 5px;
+      position: relative;
+      height: 100vh;
+    }
+    main .index_features h1 {font-size: 85px;font-family: 'Indie Flower', cursive;}
+    main .index_features .index_text {
+        max-width: 100%;
+        margin: 1px auto;
+        font-family: 'Indie Flower',cursive;
+        font-size: 38px;
+        margin-top: 30px;
+    }
+
+
+    main .img-responsive {
+        height: 15vh;
+        width: 80%;
+        float: center;
+        margin: center;
+        top: 30%;
+        bottom: 5%;
+        right: 20%;
+        left: 10%;
+        image-align:center;
+        position: absolute;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 5px;
+    }
+
+    #photo {
+        height: 50vh;
+        float: center;
+        position: left;
+        image-align: center;
+        margin-left: 10px;
+        margin-top: 50px;
+        margin-right: 100 px;
+    }
+}
+/*DESKTOP ARTWORKS */
+
+@media screen and (min-width: 700px){
+    main .col-mb-6{
+        height: 30vh;
+        background-color: #FFD6EB;
+        border: 1px solid lightgrey;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        position: relative;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-bottom: 1%;
+        padding-top: 1%;
+        right: 5%;
+        font-size: 75%;
+        width: calc(100%-300px);
+     }
+
+    main .col-xs-7 {
+        background-color: white;
+        border: 1px solid lightgrey;
+        padding: 10px;
+        margin-right: 10px;
+        margin-left: 10 px;
+        position:relative;
+        font-size: 50%;
+    }
+
+    main .col-lg-2{
+        margin-top: 30px;
+        margin-bottom: 80px;
+        max-width: 1900px;
+        min-width: 1100px;
+        right: 5%;
+        float: center;
+        width:100%;
+     }
+
+    main .col-sm-3{
+        margin-top: 30px;
+        margin-bottom: 80px;
+        margin-left: 30px;
+        width: calc(100%-200px);
+        max-width: 900px;
+        min-width: 300px;
+
+     }
+
+    main .col-sm-6{
+        height: 28vh;
+        background-color: white;
+        border: 1px solid lightgrey;
+        padding: 10px;
+        margin-right: 10px;
+        position:relative;
+        font-size: 50%;
+    }
+
+    main .container{
+        float: center;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 200px;
+        position: center;
+        max-width: 1900px;
+        min-width: 1100px;
+        right: 1%;
+    }
+
+
+    #artworks_block:hover {
+        transform: scale(1.15);
+        transition: transform .3s ease;
+        background-color: rgba(255, 255, 255, 0.2); border-radius: 4%;
+        display:block;
+    }
+
+    #art_text {
+        margin-bottom: 5%;
+        font-size: 20pt;
+        font-family: 'Indie Flower', cursive;
+        font-style: normal;
+        flex : 0 0 35px;
+   }
+}
+
+
+/*DESKTOP Artworks detail */
+@media screen and (min-width: 700px){
+    #product-image-item {
+        height: 50vh;
+        float: left;
+        position: left;
+        padding: center;
+        image-align: center;
+        margin-left: 200px;
+        margin-top: 70px;
+       }
+    main .artworks_features .artwdesc{
+        margin-left: 700px;
+        height: calc(100% - 100px);
+        width: calc(100% - 1000px);
+        margin-top: 50px;
+    }
+
+     main .artworks_features  .artworks_anons{
+        float: left;
+        color: #696969;
+        padding-top: 45px;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 5px;
+        font-size: 30px;
+
+        font-family: 'Indie Flower', cursive;
+        text-indent: 20px;
+        white-space: pre-line;
+
+    }
+     main .artworks_features .artworks_desc{
+        float: left;
+        color: #696969;
+        padding-top: 50px;
+        text-align: left;
+        padding-left: 20px;
+        padding-right: 5px;
+        font-size: 30px;
+
+        font-family: 'Indie Flower', cursive;
+        text-indent: 20px;
+        white-space: pre-line;
+
+    }
+    .artworks_features{
+        float: left;
+        margin-top: 15px;
+        text-align: center;
+        width: calc(100% - 275px);
+        max-width: 1900 px;
+        min-width: 1000 px;
+        margin-left: 275px;
+        margin-right: 5px;
+        position: relative;
+
+    }
+    main .artworks_features h1 {font-size: 85px;font-family: 'Indie Flower', cursive;color: #696969;}
+}
+
+@media screen and (max-width: 700px min-width:900px;){
+     .col-xs-6{
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-bottom: 60px;
+        padding-top: 10px;
+    }
+}
+
+/*DESKTOP contacts*/
+@media screen and (min-width: 700px){
+
+    main .contacts_features {
+      float:left;
+      color: #696969;
+      margin-top: 30px;
+      text-align: center;
+      width: calc(100% - 275px);
+      margin-left: 12%;
+      margin-right: 10%;
+      position: relative;
+      height: 30vh;
+    }
+    main .contacts_features h1 {font-size: 85px;font-family: 'Indie Flower', cursive;}
+
+    .contacts_text {
+        max-width: 100%;
+        margin: 1px auto;
+        font-family: 'Indie Flower',cursive;
+        font-size: 38px;
+        margin-top: 30px;
+    }
+
+
+    main .contacts_container{
+        float:center;
+        background-color: transparent;
+        position: center;
+        max-width: 1800px;
+        min-width: 1400px;
+        margin-left: 10%;
+        right: 10%;
+        left: 10%
+        padding-left: 200px;
+        padding-right: 200px;
+        padding-top: 150px;
+        height: 110vh;
+     }
+
+
+
+    #in {
+        float: left;
+        height: 100%;
+        width:  300 px;
+        margin-left: 2px;
+
+    }
+
+    #vk {
+        float: left;
+        height: 100%;
+        margin-left: 2px;
+       }
+    #tel {
+        float: left;
+        height: 100%;
+        margin-left: 2px;
+    }
+
+    #lin {
+        float: left;
+        height: 100%;
+        margin-left: 2px;
+       }
+
+    .soc_text{
+        margin-top: 8%;
+        float: left;
+        margin-left: 20px;
+        color: #696969;
+        font-family: 'Indie Flower', cursive;
+        text-decoration-line: none;
+        font-size: 35px;
+        max-width: 100%;
+
+    }
+
+    .soc_text:hover, a:hover{
+        color:#FF00FF;
+        transform: scale(1.1);
+        text-decoration-line: none;
+    }
+     .col-xs-6{
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 10px;
+        padding-bottom: 18px;
+        padding-top: 5px;
+        margin-bottom: 40px;
+        margin-top: 20px;
+     }
+     .col-xs-6:hover{
+        width: 100%;
+        transform: scale(1.05);
+        position: relative;
+        border-radius: 100px;
+        transition: transform .7s ease;
+        background: rgba(255, 240, 255, 0.2);
+        z-index: 1;
+        text-decoration-line: none;
+     }
+
+     .col-md-4:hover{
+        width: 100%;
+        transform: scale(1.05);
+        border-radius: 100px;
+        transition: transform .5s ease;
+        background: rgba(255, 200, 255, 0.01);
+        z-index: 1;
+        text-decoration-line: none;
+    }
+     .col-md-9{
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-bottom: 18px;
+        padding-top: 10px;
+        margin-bottom: 40px;
+    }
+     .col-lg-4{
+        float:left;
+        position: relative;
+        width: 100%;
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-bottom: 5px;
+        padding-top: 10px;
+        margin-bottom: 40px;
+        margin-left: 180px;
+
+    }
+}
+
+
+/*Menu*/
+menu_container{
+    width: 100%;
+    margin-left: -10px;
+    right: 1%
+}
+
+
+/*MOBILE Version*/
+
+/*MOBILE Menu*/
+@media screen and (max-width: 700px){
+    .sidenav{
+    display:none;
+    }
+    .menu_container{
+    display:none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+  .sidenav_mobile {padding-top: 15px;}
+  .sidenav_mobile a {font-size: 18px;}
+  .sidenav_mobile {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background: #FFC8FD;
+      overflow-x: hidden;
+      transition: 0.5s ease;
+      padding-top: 60px;
+  }
+  .sidenav_mobile .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+  }
+  .sidenav_mobile a:hover {
+       color:#FF00FF;
+       text-decoration: none;
+       transform: scale(1.05);
+  }
+  .sidenav_mobile a {
+      color:#696969;
+      display: block;
+      margin-top: 60px;
+      transition: transform .6s ease;
+      font-family: 'Indie Flower', cursive;
+      font-size: 30px;
+      padding-left: 1px;
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+
+  }
+  .sidenav_mobile {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgba(255, 200, 253, 0.95);
+      overflow-x: hidden;
+      transition: transform .5s ease;
+      padding-top: 60px;
+  }
+
+}
+
+
+/*MOBILE MAIN*/
+
+@media screen and (max-width: 700px){
+    #photo {
+        height: 33vh;
+        float: center;
+        position: left;
+        image-align: center;
+        margin-left: 10px;
+        margin-top: 50px;
+        margin-right: 100 px;
+    }
+
+    main .index_features{
+      color: #696969;
+      margin-top: 15px;
+      text-align: center;
+      position: relative;
+    }
+    main .index_features h1 {font-size: 50px;font-family: 'Indie Flower', cursive;}
+    main .index_features p {max-width: 100%; margin: 1px auto; font-family: 'Indie Flower'; font-size: 28px;}
+
+    .index_text {
+        max-width: 100%;
+        margin: 2px auto;
+        font-family: 'Indie Flower',cursive;
+        font-size: 28px;
+        margin-top: 40px;
+    }
+}
+
+/* contacts */
+
+
+
+/*MOBILE contacts*/
+@media screen and (max-width: 700px){
+    .contacts_features{
+        float: center;
+        color: #696969;
+        font-size: 45px;
+        font-family: 'Indie Flower', cursive;
+
+    }
+     .col-xs-6{
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-bottom: 60px;
+        padding-top: 10px;
+    }
+    .contacts_title{
+        float: center;
+        color: #696969;
+        font-size: 45px;
+        margin-top: 30px;
+        font-family: 'Indie Flower', cursive;
+        margin-left: 25%;
+        margin-right: 10%;
+    }
+    .contacts_text{
+        float: center;
+        color: #696969;
+        font-size: 30px;
+        margin-top: 30px;
+        font-family: 'Indie Flower', cursive;
+        margin-left: 15%;
+        margin-right: 10%;
+    }
+
+    #in {
+        float: left;
+        height: 5vh;
+        margin-left: 6%;
+    }
+
+    #vk {
+        float: left;
+        height: 5vh;
+        margin-left: 6%;
+        }
+
+    #tel {
+        float: left;
+        height: 5vh;
+        margin-left: 6%;
+    }
+
+    #lin {
+        float: left;
+        height: 5vh;
+        margin-left: 6%;
+       }
+
+    .contacts_container{
+        float: center;
+        margin-top: 8%;
+        position: center;
+        max-width: 450px;
+        min-width: 200px;
+       }
+
+    .soc_text{
+        margin-top: 8%;
+        margin-left: 135px;
+        font-family: 'Indie Flower', cursive;
+        text-decoration-line: none;
+        color:#696969;
+    }
+    .soc_text:hover, a:hover{
+       color:#FF00FF;
+       transform: scale(1.05);
+       text-decoration-line: none;
+    }
+     .col-xs-6:hover{
+        margin-left: 2%;
+        width: 370px;
+        transform: scale(1.01);
+        position: relative;
+        border-radius: 100px;
+        transition: transform .7s ease;
+        background: rgba(255, 240, 255, 0.2);
+        z-index: 1;
+        text-decoration-line: none;
+    }
+}
+
+/* artworks */
+@media screen and (max-width: 750px ){
+
+    main .container{
+        float: left;
+        position: center;
+        max-width: 600px;
+        min-width: 40px;
+        margin-left: 5px;
+        padding-left: 20px
+    }
+    main .col-lg-2{
+        float: center;
+        margin-top: 15px;
+        margin-bottom: 50px;
+
+     }
+}
+
+/*MOBILE ARTWORKS */
+
+@media screen and (max-width: 700px){
+    main .container{
+        float: center;
+        position: center;
+        max-width: 100%;
+        min-width: 200px;
+        margin-left: 5px;
+
+    }
+     main .features {
+      color: #696969;
+      margin-top: 15px;
+      text-align: center;
+      position: relative;
+      float:left;
+    }
+    main .col-lg-2{
+        float: center;
+        margin-top: 15px;
+        margin-bottom: 50px;
+
+     }
+    .col-xs-5{
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-bottom: 60px;
+        padding-top: 10px;
+    }
+    .col-sm-3{
+        position: relative;
+        width: 100%;
+        float:center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-right: 20px;
+        padding-left: 8px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        max-width: 500px;
+        min-width: 200px;
+    }
+    #artworks_block:hover {
+        transform: scale(1.05);
+        transition: transform .3s ease;
+        background-color: rgba(255, 255, 255, 0.2); border-radius: 4%;
+        display:block;
+
+    }
+    #art_text {
+       margin-bottom: 5%;
+       font-size: 35px;
+       font-family: 'Indie Flower', cursive;
+       font-style: normal;
+       flex : 0 0 35px;
+    }
+    main .features h1 {font-size: 50px;font-family: 'Indie Flower', cursive;}
+    main .features p {max-width: 100%; margin: 1px auto; font-family: 'Indie Flower'; font-size: 28px;}
+}
+
+
+/*MOBILE Artworks detail */
+@media screen and (max-width: 700px){
+    #product-image-item {
+        height: 45vh;
+        float: center;
+        position: left;
+        padding: center;
+        image-align: center;
+        margin-left: 5%;
+        margin-top: 20px;
+       }
+     main .artworks_features .artworks_anons{
+        float: center;
+        color: #323232;
+        margin-top: 10px;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 25px;
+        font-family: 'Indie Flower', cursive;
+
+    }
+     main .artworks_features .artworks_desc{
+        float: center;
+        color: #323232;
+        margin-top: 15px;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 25px;
+        font-family: 'Indie Flower', cursive;
+    }
+    main .artworks_features h1 {font-size: 50px;font-family: 'Indie Flower', cursive;}
+     main .artworks_features {
+          color: #323232;
+          margin-top: 15px;
+          text-align: center;
+          position: relative;
+          float:left;
+    }
+}
+
+/*BACKGROUND*/
+/*MOBILE background*/
+@media screen and (max-width: 700px){
+    .t-cover {
+        position: fixed;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+
+
+
+.link{
+    cursor: pointer;
+    position:relative;
+}
+
+.mr-2, .mx-2 {
+  margin-right: .0rem!important;
+}
+main .features span{
+    width: 109px;
+    height: 109px;
+    margin-left: 20px;
+    border-radius: 50%;
+    float: left;
+    margin-top: 50px;
+    position:relative;
+    top: 10%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+ }
+
+
+.item1 {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    position:relative;
+    margin-top: 200px;
+  }
+
+.item2 {
+    width: 50px;
+    height: 50px;
+    margin-top: 200px;
+    display: inline-block;
+    position: absolute;
+  }

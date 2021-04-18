@@ -1,0 +1,70 @@
+{% load static%}
+
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{%block title%}{%endblock%}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="{% static 'main/js/main.js'%}" type="text/javascript"></script>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+    </style>
+
+</head>
+<body>
+
+    <div class="wrapper">
+        <aside class="clearfix visible-xs">
+             <div id="burger">
+                <div id="mySidenav" class="sidenav_mobile">
+                      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                      <a href="{% url 'home' %}"><i class="fas fa-home"></i> Main</a>
+                      <a href="{% url 'artworks' %}"><i class="far fa-heart"></i> My works</a>
+                      <a href="{% url 'contacts' %}"><i class="fas fa-address-book"></i> Contacts</a>
+                </div>
+                <span style="font-size:40px;cursor:pointer; color:#696969;background-color: rgba(255, 240, 255, 0.15);background-shape:circle;" onclick="openNav()">&#9776; </span>
+             </div>
+             <div class="menu_container">
+                <nav>
+                    <div class="sidenav">
+                        <ul class="nav-links" id="nav-links">
+                        <li>
+                            <a href="{% url 'home' %}"><i class="fas fa-home"></i> Main</a>
+                        </li>
+
+                        <li>
+                            <a href="{% url 'artworks' %}"><i class="far fa-heart"></i> My works</a>
+                        </li>
+
+                        <li>
+                            <a href="{% url 'contacts' %}"><i class="fas fa-address-book"></i> Contacts</a>
+                        </li>
+                         </ul>
+
+                    </div>
+                </nav>
+            </div>
+        </aside>
+    </div>
+
+
+    <main >
+
+        {%block content%} {%endblock%}
+
+    </main>
+
+
+</body>
+</html>

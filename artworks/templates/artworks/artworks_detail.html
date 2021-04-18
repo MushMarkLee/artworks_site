@@ -1,0 +1,15 @@
+{%extends 'main/layout.html' %}
+{%block title%}{{ article.title }}{%endblock%}
+{%block content%}
+    <div class="artworks_features">
+        <h1>{{ artwork.title }}</h1>
+        <p><img src="{{ artwork.img.url }}"id="product-image-item"></p>
+        <div class="artwdesc">
+            <h2 class="artworks_anons">{{ artwork.anons }}</h2>
+            <h2 class="artworks_desc">{{ artwork.description | linebreaks}}</h2>
+        </div>
+
+
+    </div>
+
+{%endblock%}

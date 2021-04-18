@@ -1,0 +1,103 @@
+body {
+    background:#FFFFFF;
+    background-image:url('https://4.downloader.disk.yandex.ru/preview/04b720e52a09b6c4ef7811169762dbfcd4dc1a4f855ece289b834dd3a55220b4/inf/sHbglJ4vhYNxNAlond0cMZ2ywp-BVDKHuoUx2jlLVDFO0oNwVM28RyjyioUogXAPM9Wq2MW4h9VNHRM6QVPm8Q%3D%3D?uid=1261885650&filename=wall.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&owner_uid=1261885650&tknv=v2&size=1903x969');
+}
+aside {
+    float: left;
+    background: #FFC8FD;
+    width: 250px;
+    padding: 0.4%;
+    height: 100vh;
+    color: #696969;
+    border-right: 13px solid #9297F7;
+    position: fixed;
+    display: inline;
+}
+
+
+aside h3 {
+    margin-top: 55px;
+    font-size: 28px;
+    color: #8B008B;
+}
+aside ul {
+  font-size: 30px;
+  list-style: none;
+  margin-left: -10px;
+}
+aside ul li{
+    color:#696969;
+    display: block;
+    margin-top: 60px;
+    transition: transform .6s ease;
+}
+aside ul li:hover,aside ul a:hover{
+    color:#FF00FF;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+aside img {
+    height: 3vh;
+    float: left;
+    position:relative;
+    margin-top: 5 px;
+    margin-left: -2px;
+    padding-left: 1 px;
+    padding-right: 2 px;
+}
+aside .name {
+    font-size: 24.5px;
+    margin-left: 12px;
+    font-weight: bold;
+    color: #8B008B;
+    margin-top: -5px;
+    padding-right: 1 px;
+    padding-left: 1 px;
+}
+
+main .features {
+    float:left;
+    color: #696969;
+    margin-top: 15px;
+    text-align: center;
+    width: calc(100% - 275px);
+    margin-left: 275px;
+    margin-right: 5px;
+    position: relative;
+}
+main .features h1 {font-size: 50px;}
+main .features p {max-width: 100%; margin: 1px auto}
+main .features h2 {
+    float: left;
+    color: #696969;
+    margin-top: 100px;
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 5px;
+    font-size: 20px;
+    height: calc(100% - 100px);
+    width: calc(100% - 1000px);
+
+}
+main .container{
+    float: center;
+    width: calc(100% - 800px);
+    left: 33%;
+    right: 33%;
+ }
+
+main .col-lg-2{
+    width: 100px;
+    float: left;
+    margin-top: 100px;
+    color: #696969;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
